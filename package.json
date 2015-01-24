@@ -1,0 +1,26 @@
+{
+  "name": "case-snake",
+  "version": "0.1.0",
+  "main": "case-snake.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "case",
+    "camel",
+    "camelcase"
+  ],
+  "author": "Malte-Maurice Dreyer <dreyer.maltem+dev@gmail.com>",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ileri/case-snake.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ileri/case-snake/issues"
+  },
+  "homepage": "https://github.com/ileri/case-snake",
+  "dependencies": {
+    "case-separated": "^0.1.0"
+  }
+}
