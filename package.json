@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/ileri/case-snake",
   "dependencies": {
-    "case-separated": "^0.1.0"
+    "case-separated": "^0.2.0"
   }
 }
