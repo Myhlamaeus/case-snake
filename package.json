@@ -3,12 +3,13 @@
   "version": "0.2.0",
   "main": "case-snake.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "grunt test"
   },
   "keywords": [
     "case",
-    "camel",
-    "camelcase"
+    "snake",
+    "snakecase",
+    "snake_case"
   ],
   "author": "Malte-Maurice Dreyer <dreyer.maltem+dev@gmail.com>",
   "license": "GPL-3.0",
@@ -22,5 +23,15 @@
   "homepage": "https://github.com/ileri/case-snake",
   "dependencies": {
     "case-separated": "^0.2.0"
+  },
+  "devDependencies": {
+      "grunt": "^0.4.5",
+      "grunt-contrib-jshint": "^0.11.0",
+      "grunt-contrib-watch": "^0.6.1",
+      "grunt-mocha-test": "^0.12.7",
+      "jshint-stylish": "^1.0.0",
+      "load-grunt-tasks": "^3.0.0",
+      "mocha": "^2.1.0",
+      "time-grunt": "^1.0.0"
   }
 }
