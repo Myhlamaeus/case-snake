@@ -1,7 +1,7 @@
 {
   "name": "case-snake",
   "description": "Parse and stringify strings delimited by an underscore",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "main": "case-snake.js",
   "scripts": {
     "test": "grunt test"
