@@ -23,8 +23,8 @@
   "keywords": [
     "case",
     "snake",
-    "snakecase",
-    "snake_case"
+    "snake_case",
+    "snakecase"
   ],
   "license": "GPL-3.0",
   "main": "case-snake.js",
