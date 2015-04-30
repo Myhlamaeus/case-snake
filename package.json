@@ -26,7 +26,7 @@
     "snake_case",
     "snakecase"
   ],
-  "license": "GPL-3.0",
+  "license": "MIT",
   "main": "case-snake.js",
   "repository": {
     "type": "git",
