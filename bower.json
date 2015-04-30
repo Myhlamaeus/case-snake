@@ -1,0 +1,29 @@
+{
+  "name": "case-snake",
+  "main": "case-snake.js",
+  "version": "0.2.1",
+  "homepage": "https://github.com/ileri/case-snake",
+  "authors": [
+    "Malte-Maurice Dreyer <dreyer.maltem+dev@gmail.com>"
+  ],
+  "description": "Parse and stringify strings delimited by an underscore",
+  "moduleType": [
+    "es6"
+  ],
+  "keywords": [
+    "case",
+    "snake",
+    "snake_case",
+    "snakecase"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "dist",
+    "maps"
+  ]
+}
