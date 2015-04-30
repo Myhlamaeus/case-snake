@@ -10,14 +10,11 @@
     "case-separated": "^0.2.0"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-jshint": "^0.11.0",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-mocha-test": "^0.12.7",
-    "jshint-stylish": "^1.0.0",
-    "load-grunt-tasks": "^3.0.0",
-    "mocha": "^2.1.0",
-    "time-grunt": "^1.0.0"
+    "babel": "^5.1.13",
+    "gulp": "^3.8.11",
+    "gulp-babel": "^5.1.0",
+    "gulp-mocha": "^2.0.1",
+    "gulp-sourcemaps": "^1.5.2"
   },
   "homepage": "https://github.com/ileri/case-snake",
   "keywords": [
@@ -27,12 +24,13 @@
     "snakecase"
   ],
   "license": "MIT",
-  "main": "case-snake.js",
+  "main": "dist/case-snake.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/ileri/case-snake.git"
   },
   "scripts": {
-    "test": "standard {test/,lib/,./}*.js && grunt test"
+    "prepublish": "gulp build",
+    "test": "standard {test/,lib/,./}*.js && gulp test"
   }
 }
