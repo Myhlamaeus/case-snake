@@ -1,3 +1,3 @@
-var CaseSeparated = require("case-separated");
+var CaseSeparated = require('case-separated')
 
-module.exports = new CaseSeparated("_");
+module.exports = new CaseSeparated('_')

@@ -33,6 +33,6 @@
     "url": "https://github.com/ileri/case-snake.git"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "standard {test/,lib/,./}*.js && grunt test"
   }
 }
