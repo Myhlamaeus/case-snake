@@ -7,7 +7,7 @@
     "url": "https://github.com/ileri/case-snake/issues"
   },
   "dependencies": {
-    "case-separated": "^0.2.0"
+    "case-separated": "^0.3.0"
   },
   "devDependencies": {
     "babel": "^5.1.13",
