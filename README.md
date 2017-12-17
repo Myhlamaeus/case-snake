@@ -1,27 +1,40 @@
-case-snake [![Code Climate](https://codeclimate.com/github/ileri/case-snake/badges/gpa.svg)](https://codeclimate.com/github/ileri/case-snake) [![Build Status](https://travis-ci.org/ileri/case-snake.svg?branch=master)](https://travis-ci.org/ileri/case-snake) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
-==============
+# case-snake [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+
 > Parse and stringify strings delimited by an underscore
 
-Install
---------------
-```
+## Installation
+
+```sh
 $ npm install --save case-snake
 ```
 
-Usage
---------------
+## Usage
+
 ```js
-var caseSnake = require('case-snake')
+const caseSnake = require("case-snake");
 
-// parse
-caseSnake.parse('this_is_an_example') // ['this', 'is', 'an', 'example']
+// Parse
+caseSnake.parse("this_is_an_example"); // ['this', 'is', 'an', 'example']
 
-// stringify
-caseSnake.stringify(['this', 'is', 'an', 'example']) // 'this_is_an_example'
+// Stringify
+caseSnake.stringify(["this", "is", "an", "example"]); // 'this_is_an_example'
 
-// check
-caseSnake.is('this_is_an_example') // true
-caseSnake.is('this-is-an-example') // false
-caseSnake.is('thisIsAnExample') // false
-caseSnake.is('this') // false
+// Check
+caseSnake.is("this_is_an_example"); // True
+caseSnake.is("this-is-an-example"); // False
+caseSnake.is("thisIsAnExample"); // False
+caseSnake.is("this"); // False
 ```
+
+## License
+
+MIT © [Malte-Maurice Dreyer](https://github.com/Myhlamaeus)
+
+[npm-image]: https://badge.fury.io/js/case-snake.svg
+[npm-url]: https://npmjs.org/package/case-snake
+[travis-image]: https://travis-ci.org/Myhlamaeus/case-snake.svg?branch=master
+[travis-url]: https://travis-ci.org/Myhlamaeus/case-snake
+[daviddm-image]: https://david-dm.org/Myhlamaeus/case-snake.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/Myhlamaeus/case-snake
+[coveralls-image]: https://coveralls.io/repos/Myhlamaeus/case-snake/badge.svg
+[coveralls-url]: https://coveralls.io/r/Myhlamaeus/case-snake

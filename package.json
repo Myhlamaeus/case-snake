@@ -1,36 +1,73 @@
 {
   "name": "case-snake",
-  "description": "Parse and stringify strings delimited by an underscore",
   "version": "0.3.0",
-  "author": "Malte-Maurice Dreyer <dreyer.maltem+dev@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/ileri/case-snake/issues"
+  "description": "Parse and stringify strings delimited by an underscore",
+  "homepage": "https://github.com/Myhlamaeus/case-snake",
+  "author": {
+    "name": "Malte-Maurice Dreyer",
+    "email": "dreyer.maltem+dev@gmail.com",
+    "url": "https://github.com/Myhlamaeus"
   },
-  "dependencies": {
-    "case-separated": "^0.3.0"
-  },
-  "devDependencies": {
-    "babel": "^5.1.13",
-    "gulp": "^3.8.11",
-    "gulp-babel": "^5.1.0",
-    "gulp-mocha": "^2.0.1",
-    "gulp-sourcemaps": "^1.5.2"
-  },
-  "homepage": "https://github.com/ileri/case-snake",
+  "files": ["lib"],
+  "main": "lib/index.js",
   "keywords": [
     "case",
     "snake",
-    "snake_case",
-    "snakecase"
+    "underscore",
+    "separator",
+    "parse",
+    "stringify"
   ],
-  "license": "MIT",
-  "main": "dist/case-snake.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ileri/case-snake.git"
+  "devDependencies": {
+    "coveralls": "^2.13.1",
+    "nsp": "^2.6.3",
+    "eslint": "^4.1.0",
+    "prettier": "^1.7.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.2.1",
+    "eslint-config-prettier": "^2.4.0",
+    "eslint-plugin-prettier": "^2.2.0",
+    "eslint-config-xo": "^0.18.2",
+    "jest": "^21.0.0",
+    "jest-cli": "^21.0.0"
+  },
+  "engines": {
+    "node": ">=6"
   },
   "scripts": {
-    "prepublish": "gulp build",
-    "test": "standard {test/,lib/,./}*.js && gulp test"
+    "prepublish": "nsp check",
+    "pretest": "eslint .",
+    "precommit": "lint-staged",
+    "test": "jest"
+  },
+  "lint-staged": {
+    "*.{m,}js": ["eslint --fix", "git add"],
+    "*.json": ["prettier --write", "git add"]
+  },
+  "eslintConfig": {
+    "extends": ["xo", "prettier"],
+    "env": {
+      "jest": true,
+      "node": true
+    },
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "printWidth": 90
+        }
+      ]
+    },
+    "plugins": ["prettier"]
+  },
+  "repository": "git@github.com:Myhlamaeus/case-snake.git",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@std/esm": "^0.18.0",
+    "case-separated": "^0.4.0"
   }
 }
